@@ -29,11 +29,7 @@ jobs:
       - run:
           name: install dependencies
           command: |
-            
-            bundle install [--binstubs=PATH] [--clean] [--deployment] [--frozen]
-                 [--full-index] [--gemfile=FILE] [--local] [--no-cache]
-                 [--no-prune] [--path=PATH] [--quiet] [--shebang=STRING]
-                 [--standalone=ARRAY] [--system] [--without=GROUP GROUP]
+            bundle install --jobs=4 --retry=3 --path vendor/bundle
 
       - save_cache:
           paths:
