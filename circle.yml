@@ -9,5 +9,11 @@ dependencies:
 test:
   override:
     - bundle install
-    - bundle exec rspec 
+   
+    
+- run:
+     name: Run rspec in parallel
+     command: |
+     bundle exec rspec --profile 10 \
+     --format RspecJunitFormatter \
    
