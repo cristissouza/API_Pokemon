@@ -9,5 +9,5 @@ dependencies:
 test:
   override:
     - bundle install
-    - bundle exec RSpec 
+    - bundle exec rspec 
    
