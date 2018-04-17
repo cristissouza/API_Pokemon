@@ -9,7 +9,7 @@ dependencies:
 test:
   override:
     - bundle install
-    bundle exec rspec testPokemonAPI.rb
+    - bundle exec rspec testPokemonAPI.rb
    
     
 
